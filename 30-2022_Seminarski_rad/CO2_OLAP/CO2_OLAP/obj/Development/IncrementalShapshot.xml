@@ -1,0 +1,68 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>CO2_OLAP</Database>
+    <Server>(local)\SQLSERVER2025</Server>
+    <ConnectionString>Data Source=(local)\SQLSERVER2025;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>f+Uy7KKe5yczQ6RhUwrPW6bs+QE=7/2/2026 10:42:04 PM7/2/2026 10:28:52 PM</TimeStamp>
+        <ID>
+          <String>CO2 DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>Wt0Ovzn7TUu8jqUOyQXuAAr2KOk=7/2/2026 10:29:58 PM7/2/2026 10:29:58 PM</TimeStamp>
+        <ID>
+          <String>CO2 DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>AhQDtxlb8EXtG7dVwyx+9iYkCVM=7/2/2026 10:36:05 PM7/2/2026 10:32:42 PM</TimeStamp>
+        <ID>
+          <String>Dim Year</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>SDUUcDAN+dC9Q6v+vznfmCwj++4=7/2/2026 10:52:39 PM7/2/2026 10:36:05 PM</TimeStamp>
+        <ID>
+          <String>Dim Country</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>gy1LdnCNtBkOrUeOP8476YPsvzw=7/2/2026 10:37:39 PM7/2/2026 10:37:39 PMMfX8JMM3Bvk51ite1fRdFNPlHFU=7/2/2026 10:37:39 PM7/2/2026 10:37:39 PM</TimeStamp>
+        <ID>
+          <String>CO2_Cube</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>TNsXoQaJcXMFtLSq0VCTz1/+pHs=7/2/2026 10:24:29 PM7/2/2026 10:24:28 PM</TimeStamp>
+      <ID>
+        <String>CO2_OLAP</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2026-07-03T23:01:44.64Z</LastDeployed>
+</DeploymentSnapshot>

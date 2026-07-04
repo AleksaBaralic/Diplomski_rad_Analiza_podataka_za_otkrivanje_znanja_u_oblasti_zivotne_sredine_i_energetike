@@ -1,0 +1,127 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fa8817a7-eb09-473c-b4b7-2685c6894d8b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CO2 DW</ID>
+  <Name>CO2 DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>CO2 DW</DataSourceID>
+  <Schema>
+    <xs:schema id="CO2_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="CO2_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="3782907c-d08e-4d46-97d2-103b3951662c">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DimCountry" msprop:DbTableName="DimCountry" msprop:FriendlyName="DimCountry" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="3a0d343b-312b-4b6f-908a-2d67298d4e2a">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CountryKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="CountryKey" msprop:DbColumnName="CountryKey" msprop:design-time-name="c590e581-13cc-4ffd-a0c6-ce10eada03d9" type="xs:int" />
+                  <xs:element name="CountryName" msprop:FriendlyName="CountryName" msprop:DbColumnName="CountryName" msprop:design-time-name="a040d87f-af6b-4169-9922-530d4d3217d4">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ISOCode" msprop:FriendlyName="ISOCode" msprop:DbColumnName="ISOCode" msprop:design-time-name="6a2b3a32-75e9-4678-a0a4-7da9f845ae65" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Population2022" msprop:FriendlyName="Population2022" msprop:DbColumnName="Population2022" msprop:design-time-name="a161fb63-802d-4187-b3e1-4ebd28ce36ef" type="xs:long" minOccurs="0" />
+                  <xs:element name="AreaKm2" msprop:FriendlyName="AreaKm2" msprop:DbColumnName="AreaKm2" msprop:design-time-name="fcfa9f14-7d10-4d4a-aad9-495382e4aa44" type="xs:double" minOccurs="0" />
+                  <xs:element name="DensityKm2" msprop:FriendlyName="DensityKm2" msprop:DbColumnName="DensityKm2" msprop:design-time-name="9117cfb5-b907-463f-8029-2700b72e670a" type="xs:double" minOccurs="0" />
+                  <xs:element name="PercentOfWorldArea" msprop:FriendlyName="PercentOfWorldArea" msprop:DbColumnName="PercentOfWorldArea" msprop:design-time-name="6c92ca39-bf1b-48b5-8834-616141935f89" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimYear" msprop:DbTableName="DimYear" msprop:FriendlyName="DimYear" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="6469e271-a596-4e3a-a649-02b6a9bc79c6">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="YearKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="YearKey" msprop:DbColumnName="YearKey" msprop:design-time-name="1fb2952a-1b61-4890-b968-5ceab82acf1d" type="xs:int" />
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="3c7ee9dc-2648-4f86-86e0-07dde19361f6" type="xs:int" />
+                  <xs:element name="Decade" msprop:FriendlyName="Decade" msprop:DbColumnName="Decade" msprop:design-time-name="7bf6bf29-9bd6-46af-8af4-6485a432d42b" type="xs:int" />
+                  <xs:element name="Century" msprop:FriendlyName="Century" msprop:DbColumnName="Century" msprop:design-time-name="c544bfa1-a000-47c8-9af1-efa6e0cc1f22" type="xs:int" />
+                  <xs:element name="Era" msprop:FriendlyName="Era" msprop:DbColumnName="Era" msprop:design-time-name="74243ad9-9e8f-469b-a605-c7f95221a70c">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FactCO2Emission" msprop:DbTableName="FactCO2Emission" msprop:FriendlyName="FactCO2Emission" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="1e6ffb52-4fa1-4ecf-abd7-68a6d7bca200">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FactKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="FactKey" msprop:DbColumnName="FactKey" msprop:design-time-name="244c66b0-952e-4e08-9b51-7390ce3a5b4d" type="xs:int" />
+                  <xs:element name="CountryKey" msprop:FriendlyName="CountryKey" msprop:DbColumnName="CountryKey" msprop:design-time-name="45beb6d3-58b0-4780-acd2-4e578e93c640" type="xs:int" />
+                  <xs:element name="YearKey" msprop:FriendlyName="YearKey" msprop:DbColumnName="YearKey" msprop:design-time-name="d724172f-92c9-4f4b-97d0-e43a07633da1" type="xs:int" />
+                  <xs:element name="CumulativeEmissionTons" msprop:FriendlyName="CumulativeEmissionTons" msprop:DbColumnName="CumulativeEmissionTons" msprop:design-time-name="77a0a939-e770-4f0a-8c4e-2801cb397103" type="xs:decimal" />
+                  <xs:element name="AnnualEmissionTons" msprop:FriendlyName="AnnualEmissionTons" msprop:DbColumnName="AnnualEmissionTons" msprop:design-time-name="a2ba6d91-cac7-4c1f-89c5-c497dc3cb0aa" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimCountry" />
+          <xs:field xpath="CountryKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimYear_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimYear" />
+          <xs:field xpath="YearKey" />
+        </xs:unique>
+        <xs:unique name="dbo_FactCO2Emission_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactCO2Emission" />
+          <xs:field xpath="FactKey" />
+        </xs:unique>
+        <xs:keyref name="FK__FactCO2Em__Count__4E88ABD4" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FactCO2Emission" />
+          <xs:field xpath="CountryKey" />
+        </xs:keyref>
+        <xs:keyref name="FK__FactCO2Em__YearK__4F7CD00D" refer="dbo_DimYear_Constraint1">
+          <xs:selector xpath=".//dbo_FactCO2Emission" />
+          <xs:field xpath="YearKey" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <CO2_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>
