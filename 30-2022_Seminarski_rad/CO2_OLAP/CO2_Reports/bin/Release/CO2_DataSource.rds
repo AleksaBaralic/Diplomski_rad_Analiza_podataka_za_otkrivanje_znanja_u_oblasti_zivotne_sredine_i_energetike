@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="CO2_DataSource">
-  <ConnectionProperties>
-    <Extension>OLEDB-MD</Extension>
-    <ConnectString>Data Source=(local)\SQLSERVER2025;Initial Catalog=CO2_OLAP</ConnectString>
-    <IntegratedSecurity>true</IntegratedSecurity>
-  </ConnectionProperties>
-  <DataSourceID>374e1679-846e-402f-ad29-2d99fff93f64</DataSourceID>
-</RptDataSource>
